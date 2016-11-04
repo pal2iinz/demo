@@ -18,7 +18,8 @@ namespace demo.Controllers
 
         public ActionResult Edit()
         {
-            Response.Write('Hello ASP.NET C# MVC');
+            Response.Write("Hello ASP.NET C# MVC");
+            return View();
         }
     }
 }
