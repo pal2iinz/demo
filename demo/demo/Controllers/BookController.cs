@@ -19,7 +19,8 @@ namespace demo.Controllers
         public ActionResult Edit()
         {
             Response.Write("Hello ASP.NET C# MVC");
-            return View();
+            return Content("Hello World!");
+            //return View();
         }
     }
 }
