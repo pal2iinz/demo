@@ -15,5 +15,10 @@ namespace demo.Controllers
         }
 
         public int MyProperty { get; set; }
+
+        public ActionResult Edit()
+        {
+            Response.Write('Hello ASP.NET C# MVC');
+        }
     }
 }
