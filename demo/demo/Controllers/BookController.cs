@@ -13,5 +13,7 @@ namespace demo.Controllers
         {
             return View();
         }
+
+        public int MyProperty { get; set; }
     }
 }
