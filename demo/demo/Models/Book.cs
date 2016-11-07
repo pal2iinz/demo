@@ -9,5 +9,6 @@ namespace demo.Models
     {
         public int BookId { get; set; }
         public string Bookname { get; set; }
+        public int Categories { get; set; }
     }
 }

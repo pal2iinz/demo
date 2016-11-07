@@ -161,6 +161,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611070356469_InitialCreate.cs" />
+    <Compile Include="Migrations\201611070356469_InitialCreate.Designer.cs">
+      <DependentUpon>201611070356469_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611070438064_Initial.cs" />
+    <Compile Include="Migrations\201611070438064_Initial.Designer.cs">
+      <DependentUpon>201611070438064_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\dbcontext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,10 +204,17 @@
     <Folder Include="Areas\Support\Controllers\" />
     <Folder Include="Areas\Support\Models\" />
     <Folder Include="Areas\Support\Views\Shared\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611070356469_InitialCreate.resx">
+      <DependentUpon>201611070356469_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611070438064_Initial.resx">
+      <DependentUpon>201611070438064_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
