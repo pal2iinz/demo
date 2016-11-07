@@ -23,6 +23,9 @@
             @Html.DisplayFor(modelItem => item.Bookname)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.BookId }) |
             @Html.ActionLink("Details", "Details", new { id=item.BookId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.BookId })

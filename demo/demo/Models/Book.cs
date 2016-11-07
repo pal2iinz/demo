@@ -10,5 +10,6 @@ namespace demo.Models
         public int BookId { get; set; }
         public string Bookname { get; set; }
         public string Location { get; set; }
+        public int deleted { get; set; }
     }
 }

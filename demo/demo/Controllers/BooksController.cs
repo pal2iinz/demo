@@ -46,7 +46,7 @@ namespace demo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BookId,Bookname")] Book book)
+        public ActionResult Create([Bind(Include = "BookId,Bookname,Location,deleted")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace demo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BookId,Bookname")] Book book)
+        public ActionResult Edit([Bind(Include = "BookId,Bookname,Location")] Book book)
         {
             if (ModelState.IsValid)
             {
